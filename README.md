@@ -14,10 +14,10 @@ An example run of the command should look like this:
 ## Exmaple calls
 * copy the file to the `host machine`:
     
-        python3 docker_cp.py --buffer-length=4 test:/etc/fedora-release .`
+        python3 docker_cp.py --buffer-length=4 test:/etc/fedora-release .
 * copy the file to the `host machine` as a tar (dosen't extracts the tar):
 
-        python3 docker_cp.py --buffer-length=4 --archive true test:/etc/fedora-release .`
+        python3 docker_cp.py --buffer-length=4 --archive true test:/etc/fedora-release .
 * copy the tar file to the `docker machine` (dest folder **MUST** exist):
 
         python3 docker_cp.py --buffer-length=4 --archive true ./fedora-release-file test:/etc/fedora/
